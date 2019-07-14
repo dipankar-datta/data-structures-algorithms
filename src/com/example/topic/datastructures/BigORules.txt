@@ -1,0 +1,16 @@
+BIG O Rule Book
+
+Rule 1 - Worst case.
+         Always consider worst case scenario while computing Big O notations.
+
+Rule 2 - Remove constants
+         Ignore/Removes calculated constants while computing Big O, since with large data sets
+         the n value becomes large and constants become negligible.
+
+Rule 3 - Different terms for inputs
+         For different types of inputs for the same function/method the Big O calculation should be different.
+         For the same method if the execution inside the method has nested loop, then the n value is multiplied,
+         where in case of sequential loops the n value is added.
+
+Rule 4 - Drop non dominants
+         While calculating Big O, drop off the values that don't matter much when extreme data set is considered.
