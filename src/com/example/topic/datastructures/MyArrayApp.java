@@ -2,7 +2,29 @@ package com.example.topic.datastructures;
 
 import java.util.Arrays;
 
-public class MyArray<T> {
+public class MyArrayApp {
+    public static void main(String[] args) {
+        MyArray myArray = new MyArray<Integer>(2);
+        myArray.add(11);
+        myArray.add(22);
+        myArray.add(33);
+        myArray.add(44);
+        myArray.add(55);
+        myArray.add(66);
+        System.out.println(myArray);
+        myArray.delete(2);
+        System.out.println(myArray);
+        myArray.delete(2);
+        myArray.delete(2);
+        myArray.delete(2);
+        System.out.println(myArray);
+        myArray.add(77);
+        System.out.println(myArray);
+
+    }
+}
+
+class MyArray<T> {
 
     private Object[] data;
     private int pointer;
@@ -83,28 +105,5 @@ public class MyArray<T> {
                 "data=" + Arrays.toString(data) +
                 ", pointer=" + pointer +
                 '}';
-    }
-}
-
-
-class MyArrayApp {
-    public static void main(String[] args) {
-        MyArray myArray = new MyArray<Integer>(2);
-        myArray.add(11);
-        myArray.add(22);
-        myArray.add(33);
-        myArray.add(44);
-        myArray.add(55);
-        myArray.add(66);
-        System.out.println(myArray);
-        myArray.delete(2);
-        System.out.println(myArray);
-        myArray.delete(2);
-        myArray.delete(2);
-        myArray.delete(2);
-        System.out.println(myArray);
-        myArray.add(77);
-        System.out.println(myArray);
-
     }
 }
